@@ -1,0 +1,21 @@
+import pgzrun
+from random import randint
+
+WIDTH = 300
+HEIGHT = 300
+
+def draw():
+    screen.fill((0,0,0))
+    r = 255
+    g = 0
+    b = randint(120,255)
+    x,y = 150,150
+    size = 20
+
+    for i in range(15):
+        point1 = (x,y - size)
+        point2 = (x - size, y + size)
+        point3 = (x + size, y + size)
+        screen.draw.line(point1, point2, ())
+
+pgzrun.go()
